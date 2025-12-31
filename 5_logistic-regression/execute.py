@@ -21,7 +21,7 @@ X_train_std = sc.fit_transform(X_train)
 X_test_std = sc.transform(X_test)
 
 # Logistic Regression (one line!)
-model = LogisticRegression()
+model = LogisticRegression(C=0.1)
 model.fit(X_train_std, y_train)
 
 # Accuracy

@@ -8,8 +8,9 @@ class TicTacToe:
         # Step 2: Print the board
         for row in self.board:
             print(' | '.join(row))
-            print('-' * 5)
+            print('-' * 10)
 
+        print("\n")
     def is_draw(self):
         # Check if the game is a draw
         for row in self.board:
