@@ -9,7 +9,7 @@ X = iris.data
 
 # Apply K-Means
 k = 3
-kmeans = KMeans(n_clusters=k, random_state=0)
+kmeans = KMeans(n_clusters=k)
 labels = kmeans.fit_predict(X)
 centroids = kmeans.cluster_centers_
 
@@ -21,7 +21,7 @@ for i in range(k):
         X[labels == i, 0],   # Sepal length
         X[labels == i, 1],   # Sepal width
         c=colors[i],
-        label=f'Cluster {i}'
+        label=f'Cluster {i+1}'
     )
 
 # Plot centroids

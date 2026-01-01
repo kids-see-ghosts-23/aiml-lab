@@ -54,4 +54,4 @@ print(confusion_matrix(y_test, y_pred))
 
 # Print classification report
 print("\nClassification Report:")
-print(classification_report(y_test, y_pred, target_names=class_names))
+print(classification_report(y_test, y_pred))

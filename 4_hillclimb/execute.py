@@ -18,7 +18,7 @@ def hill_climbing(func, x, step=0.01, iters=1000):
 
 # Inputs
 f_str = input("Enter function (e.g., -x**2 + 4*x): ")
-func = lambda x: eval(f_str, {"x": x, "np": np})
+func = lambda x: eval(f_str)
 start = float(input("Enter starting x: "))
 
 # Execution
